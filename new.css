@@ -1,0 +1,49 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+p {
+    font-size: 20px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.col {
+    float: left;
+    min-height: 600px;
+    background: #D1EEEE;
+    margin: 1%;
+    margin-bottom: 10px;
+}
+.half {
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.con-bottom {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 100px;
+}
+@media only screen and (max-width: 1000px) {
+    
+    .col {
+        
+        float: none;
+        min-height: 500px;
+        
+    }
+    .half {
+        
+        width: 100%;
+        
+    }
+    
+}
