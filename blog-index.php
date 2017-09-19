@@ -11,7 +11,7 @@
         <title>Simple Blog</title>
     </head>
     <body>
-       <h1 style="text-align: center;">My Awesome Functional Blog</h1>
+       <h1 class="header" style="text-align: center;">My Awesome Functional Blog</h1>
        
        
        <?php

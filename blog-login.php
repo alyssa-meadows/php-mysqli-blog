@@ -34,12 +34,19 @@ if($_POST['submit']) {
         <title>Login</title>
     </head>
     <body>
-        
+        <div class="container-o">
+            
+        <h2 class="center">Blog Admin Login</h2>
         <form action='blog-login.php' method='post'>
-            Username: <input type='text' name='username' /><br />
-            Password: <input type='password' name='password' /><br />
-            <input type='submit' name='submit' value='Login' /> 
+            
+            <input type="text" placeholder="Username" name="username"/> <br />
+            <input type="password" placeholder="Password" name="password" /> <br /><br />
+            <input type="submit" name="submit" value="Log In" /> <br />
+            
+            <!--Username: <input type='text' name='username' /><br />-->
+            <!--Password: <input type='password' name='password' /><br /><br />-->
+            <!--<input type='submit' name='submit' value='Login' /> -->
         </form>
-        
+        </div>
     </body>
 </html>

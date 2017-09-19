@@ -36,18 +36,29 @@
         <link rel="stylesheet" type="text/css" href="new.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <title>Admin Page</title>
-    </head>
-    <body>
-        <h1>Welcome, <?php echo $username; ?>!</h1>
+        <style>
+            input {
+                margin: 5px;
+            }
+            textarea {
+                width: 50%;    
+                min-height: 300px;
+                margin: 5px;
+            }
+        </style>
+        <div class="container-o">
+        <h1 class="center">Welcome, <?php echo $username; ?>!</h1><br />
         
         <form method="post" action="admin.php">
-            Title: <input type="text" name="title" /><br />
-            Subtitle: <input type="text" name="subtitle" /><br /> 
-            Content: <textarea name="content"></textarea><br />
+            
+            <input type="text" placeholder="Title" name="title" /><br />
+            <input type="text" placeholder="Subtitle" name="subtitle" /><br /> 
+            <textarea placeholder="Content" name="content"></textarea><br />
             <input type="submit" name="submit" value="Post Blog Entry"/>
         </form>
         
         <br />
         <a href="blog-index.php">View Home Page</a> | <a href="blog-logout.php">Logout</a>
+        </div>
     </body>
 </html>
