@@ -7,7 +7,10 @@ h1, h2 {
 }
 .header {
    font-size: 45px;
+   width: 100%;
    margin: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
    text-align: center;
 }
 .container {
@@ -22,7 +25,7 @@ h1, h2 {
 .col {
     float: left;
     min-height: 600px;
-    background: #D1EEEE;
+    background: #EAE3EA;
     margin: 1%;
     margin-bottom: 10px;
 }
@@ -40,7 +43,18 @@ h1, h2 {
 .center{
     text-align: center;
 }
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 1600px) {
+ 
+     .col {
+         
+         min-height: 800px;
+         
+     }
+    
+}
+
+@media only screen and (max-width: 1100px) {
     
     .col {
         

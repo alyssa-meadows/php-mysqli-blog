@@ -20,6 +20,22 @@
             }
             
             
+            error_reporting(E_ALL & ~E_NOTICE);
+            session_start();
+          
+            if (isset($_SESSION['id'])) {
+            
+                $userId = $_SESSION['id'];
+                $username = $_SESSION['username'];
+            
+            } else {
+            
+                header('Location: home.php');
+                die();
+            
+            }
+            
+            
         } 
         
     } else {
@@ -33,6 +49,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="tinymce/tinymce.min.js"></script>
+        <script>tinymce.init({ selector:'textarea' });</script>
         <link rel="stylesheet" type="text/css" href="new.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <title>Admin Page</title>
@@ -52,8 +70,8 @@
         <form method="post" action="admin.php">
             
             <input type="text" placeholder="Title" name="title" /><br />
-            <input type="text" placeholder="Subtitle" name="subtitle" /><br /> 
-            <textarea placeholder="Content" name="content"></textarea><br />
+            <input type="text" placeholder="Subtitle" name="subtitle" /><br /> <br />
+            <textarea name="content"></textarea><br /><br />
             <input type="submit" name="submit" value="Post Blog Entry"/>
         </form>
         

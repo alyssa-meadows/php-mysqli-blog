@@ -50,7 +50,7 @@
         
        <br />
        <div class="con-bottom">
-         <a href="admin.php">Admin</a>
+         <a href="admin.php">Admin</a> | <a href="registration.php">Registration</a>
        </div>
     </body>
 </html>
